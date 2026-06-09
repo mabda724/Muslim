@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
+    <application
+        android:name=".MuslimApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Muslim"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.AppsListActivity"
+            android:label="اختيار التطبيقات"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.AthkarActivity"
+            android:label="الأذكار"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.PinCodeActivity"
+            android:label="إدخال الرمز"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:label="الإعدادات"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.HadithActivity"
+            android:label="الأحاديث النبوية"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.ReportsActivity"
+            android:label="التقارير"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.DashboardActivity"
+            android:label="لوحة التتبع"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".DonateActivity"
+            android:label="تبرع"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.AdhanAlarmActivity"
+            android:label="أذان الصلاة"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.Muslim"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name=".AppBlockerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <service
+            android:name=".ui.AdhanService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
+
+        <service
+            android:name=".PrayerTimeService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse" />
+
+        <receiver
+            android:name=".PrayerAlarmReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.Blackbox.muslim.PRAYER_ALARM" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".PrayerReminderReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".DailyDhikrReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".PrayerEndedReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".IqamahReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".DuaNotificationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.Blackbox.muslim.SHOW_DUA" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".StopAdhanReceiver"
+            android:exported="false" />
+
+        <!-- Prayer Widget -->
+        <receiver
+            android:name=".widget.PrayerWidgetProvider"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/prayer_widget_info" />
+        </receiver>
+
+        <!-- Dhikr Widget -->
+        <receiver
+            android:name=".widget.DhikrWidgetProvider"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/dhikr_widget_info" />
+        </receiver>
+
+    </application>
+</manifest>

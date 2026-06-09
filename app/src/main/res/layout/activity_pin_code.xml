@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_dark"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" muslim"
+            android:textColor="@color/teal_500"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvPinTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أدخل الرمز"
+            android:textColor="@color/text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvPinSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أدخل رمز PIN للوصول للإعدادات"
+            android:textColor="@color/text_muted"
+            android:textSize="14sp"
+            android:layout_marginBottom="48dp" />
+
+        <TextView
+            android:id="@+id/tvPinDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="○○○○"
+            android:textColor="@color/teal_400"
+            android:textSize="40sp"
+            android:letterSpacing="0.3"
+            android:layout_marginBottom="48dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button android:id="@+id/btnPin1" style="@style/PinButton" android:text="1" />
+            <Button android:id="@+id/btnPin2" style="@style/PinButton" android:text="2" />
+            <Button android:id="@+id/btnPin3" style="@style/PinButton" android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button android:id="@+id/btnPin4" style="@style/PinButton" android:text="4" />
+            <Button android:id="@+id/btnPin5" style="@style/PinButton" android:text="5" />
+            <Button android:id="@+id/btnPin6" style="@style/PinButton" android:text="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button android:id="@+id/btnPin7" style="@style/PinButton" android:text="7" />
+            <Button android:id="@+id/btnPin8" style="@style/PinButton" android:text="8" />
+            <Button android:id="@+id/btnPin9" style="@style/PinButton" android:text="9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnBiometric"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:text=""
+                android:background="@drawable/circle_glass"
+                android:drawableTop="@android:drawable/ic_lock_lock"
+                android:layout_marginEnd="48dp" />
+
+            <Button android:id="@+id/btnPin0" style="@style/PinButton" android:text="0" />
+
+            <Button
+                android:id="@+id/btnPinDelete"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:text="⌫"
+                android:background="@drawable/circle_glass"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:layout_marginStart="48dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

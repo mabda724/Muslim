@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مسلم</string>
+    <string name="accessibility_service_description">يمنع استخدام التطبيقات أثناء أوقات الصلاة لمساعدتك على التركيز في صلاتك</string>
+    <string name="next_prayer">الصلاة القادمة</string>
+    <string name="blocking_active">الحظر نشط</string>
+    <string name="blocking_ready">الحظر جاهز</string>
+    <string name="prayer_window">مدة الحظر</string>
+    <string name="minutes">دقيقة</string>
+    <string name="enable_accessibility">تفعيل خدمة الوصول</string>
+    <string name="accessibility_hint">مطلوب لمنع التطبيقات أثناء الصلاة</string>
+    <string name="get_location">تحديد الموقع الحالي</string>
+    <string name="calculation_method">طريقة الحساب</string>
+    <string name="latitude">خط العرض</string>
+    <string name="longitude">خط الطول</string>
+    <string name="enabled_prayers">أوقات الصلاة المفعّلة</string>
+    <string name="test_mode">وضع التجربة</string>
+    <string name="test_mode_hint">اسحب لتعديل وقت الصلاة لتجربة الحظر</string>
+    <string name="prayer_times_today">أوقات الصلاة اليوم</string>
+    <string name="settings">الإعدادات</string>
+    <string name="blocking_duration">مدة الحظر (دقائق)</string>
+    <string name="location">الموقع</string>
+    <string name="notifications">إشعارات أوقات الصلاة</string>
+    <string name="app_blocking">منع التطبيقات during الصلاة</string>
+</resources>

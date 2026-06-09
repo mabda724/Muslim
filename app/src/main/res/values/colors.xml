@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Navy / Blue palette -->
+    <color name="navy_950">#FF050D1A</color>
+    <color name="navy_900">#FF0A1A30</color>
+    <color name="navy_800">#FF122548</color>
+    <color name="navy_700">#FF1A3360</color>
+    <color name="navy_600">#FF234578</color>
+    <color name="navy_500">#FF2C5890</color>
+
+    <!-- Teal palette -->
+    <color name="teal_700">#FF00899A</color>
+    <color name="teal_600">#FF0099AB</color>
+    <color name="teal_500">#FF00BCD4</color>
+    <color name="teal_400">#FF26C6DA</color>
+    <color name="teal_300">#FF4DD0E1</color>
+    <color name="teal_200">#FF80DEEA</color>
+
+    <!-- Gold / Amber palette -->
+    <color name="gold_600">#FFB8941F</color>
+    <color name="gold_500">#FFD4AF37</color>
+    <color name="gold_400">#FFDDB94F</color>
+    <color name="gold_300">#FFE6C368</color>
+    <color name="gold_200">#FFEFD080</color>
+
+    <!-- Surfaces -->
+    <color name="surface_dark">#FF050D1A</color>
+    <color name="surface_card">#FF122548</color>
+    <color name="surface_card_elevated">#FF1A3360</color>
+    <color name="surface_overlay">#1A00BCD4</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#B0C4DE</color>
+    <color name="text_muted">#7A91AD</color>
+    <color name="text_gold">#FFD4AF37</color>
+
+    <!-- Status -->
+    <color name="prayer_active">#FF00BCD4</color>
+    <color name="prayer_upcoming">#FFD4AF37</color>
+    <color name="prayer_passed">#4DFFFFFF</color>
+    <color name="warning_amber">#FFD4AF37</color>
+    <color name="danger_red">#FFEF4444</color>
+
+    <!-- Glassmorphism -->
+    <color name="glass_bg">#1A00BCD4</color>
+    <color name="glass_border">#1AFFFFFF</color>
+    <color name="glass_highlight">#0DFFFFFF</color>
+    <color name="glass_bg_gold">#1AD4AF37</color>
+    <color name="glass_border_gold">#33D4AF37</color>
+
+    <!-- Glows -->
+    <color name="glow_teal">#4000BCD4</color>
+    <color name="glow_gold">#40D4AF37</color>
+    <color name="glow_navy">#40122548</color>
+
+    <!-- Legacy aliases (keep for code that references these) -->
+    <color name="emerald_500">#FF00BCD4</color>
+    <color name="active_green">#FF00BCD4</color>
+
+    <!-- Light Theme Colors -->
+    <color name="surface_light">#FFF5F5F5</color>
+    <color name="surface_light_card">#FFFFFFFF</color>
+    <color name="text_dark">#FF1A1A1A</color>
+    <color name="text_light_secondary">#FF666666</color>
+
+    <!-- Green Islamic Theme Colors -->
+    <color name="islamic_green">#FF00695C</color>
+    <color name="islamic_green_dark">#FF004D40</color>
+    <color name="surface_green">#FF0A1A0F</color>
+    <color name="surface_green_card">#FF112519</color>
+
+    <!-- Blue Calm Theme Colors -->
+    <color name="calm_blue">#FF1976D2</color>
+    <color name="calm_blue_dark">#FF0D47A1</color>
+    <color name="silver">#FFC0C0C0</color>
+    <color name="silver_light">#FFE0E0E0</color>
+    <color name="surface_blue">#FF0A1020</color>
+    <color name="surface_blue_card">#FF122540</color>
+
+    <!-- Brown Earth Theme Colors -->
+    <color name="earth_brown">#FF795548</color>
+    <color name="earth_brown_dark">#FF5D4037</color>
+    <color name="surface_brown">#FF1A1210</color>
+    <color name="surface_brown_card">#FF251A16</color>
+
+    <!-- Purple Modern Theme Colors -->
+    <color name="modern_purple">#FF9C27B0</color>
+    <color name="modern_purple_dark">#FF7B1FA2</color>
+    <color name="pink_accent">#FFE91E63</color>
+    <color name="pink_accent_light">#FFF48FB1</color>
+    <color name="surface_purple">#FF1A0A15</color>
+    <color name="surface_purple_card">#FF251020</color>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="4dp"
+    android:layout_marginBottom="2dp">
+
+    <!-- Prayer indicator dot -->
+    <View
+        android:id="@+id/prayerDot"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="@drawable/dot_active"
+        android:layout_marginEnd="12dp"
+        android:visibility="invisible" />
+
+    <!-- Prayer name -->
+    <TextView
+        android:id="@+id/tvTrackingPrayerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="الفجر"
+        android:textColor="@color/text_primary"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!-- Prayer time -->
+    <TextView
+        android:id="@+id/tvTrackingPrayerTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="04:32"
+        android:textColor="@color/text_muted"
+        android:textSize="13sp"
+        android:layout_marginEnd="12dp" />
+
+    <!-- Check / Uncheck button -->
+    <FrameLayout
+        android:id="@+id/btnTogglePrayer"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/circle_glass"
+        android:foreground="?android:selectableItemBackground">
+
+        <TextView
+            android:id="@+id/tvCheckIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="✓"
+            android:textSize="18sp"
+            android:textColor="@color/teal_400"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

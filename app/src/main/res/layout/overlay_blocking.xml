@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0050D1A">
+
+    <!-- Glow Effects -->
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="-100dp"
+        android:background="@drawable/glow_emerald"
+        android:alpha="0.8" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginStart="-50dp"
+        android:background="@drawable/glow_gold"
+        android:alpha="0.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <!-- Mosque Icon -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" &#x1F54C;"
+            android:textSize="64sp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/tvOverlayPrayerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الفجر"
+            android:textColor="@color/gold_400"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvOverlayPrayerNameArabic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="صلاة الفجر"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/tvOverlayRemaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الوقت المتبقي: 15 دقيقة"
+            android:textColor="@color/teal_400"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="يرجى التوجه للصلاة وترك الهاتف"
+            android:textColor="@color/text_muted"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="48dp" />
+
+        <Button
+            android:id="@+id/btnOverlayDismiss"
+            android:layout_width="200dp"
+            android:layout_height="56dp"
+            android:text="العودة للرئيسية"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_emerald"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</FrameLayout>

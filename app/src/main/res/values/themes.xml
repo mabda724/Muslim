@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Theme - Dark Navy (Default) -->
+    <style name="Theme.Muslim" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/teal_600</item>
+        <item name="colorPrimaryVariant">@color/teal_700</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorSecondary">@color/gold_500</item>
+        <item name="colorSecondaryVariant">@color/gold_400</item>
+        <item name="colorOnSecondary">@color/surface_dark</item>
+        <item name="android:colorBackground">@color/surface_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <!-- Light Theme -->
+    <style name="Theme.Muslim.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/teal_600</item>
+        <item name="colorPrimaryVariant">@color/teal_700</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/gold_600</item>
+        <item name="colorSecondaryVariant">@color/gold_500</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="android:colorBackground">@color/surface_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnSurface">@color/text_dark</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <!-- Green Islamic Theme -->
+    <style name="Theme.Muslim.Green" parent="Theme.Muslim">
+        <item name="colorPrimary">@color/islamic_green</item>
+        <item name="colorPrimaryVariant">@color/islamic_green_dark</item>
+        <item name="colorSecondary">@color/gold_500</item>
+        <item name="colorSecondaryVariant">@color/gold_400</item>
+        <item name="android:colorBackground">@color/surface_green</item>
+        <item name="colorSurface">@color/surface_green</item>
+    </style>
+
+    <!-- Blue Calm Theme -->
+    <style name="Theme.Muslim.Blue" parent="Theme.Muslim">
+        <item name="colorPrimary">@color/calm_blue</item>
+        <item name="colorPrimaryVariant">@color/calm_blue_dark</item>
+        <item name="colorSecondary">@color/silver</item>
+        <item name="colorSecondaryVariant">@color/silver_light</item>
+        <item name="android:colorBackground">@color/surface_blue</item>
+        <item name="colorSurface">@color/surface_blue</item>
+    </style>
+
+    <!-- Brown Earth Theme -->
+    <style name="Theme.Muslim.Brown" parent="Theme.Muslim">
+        <item name="colorPrimary">@color/earth_brown</item>
+        <item name="colorPrimaryVariant">@color/earth_brown_dark</item>
+        <item name="colorSecondary">@color/gold_500</item>
+        <item name="colorSecondaryVariant">@color/gold_400</item>
+        <item name="android:colorBackground">@color/surface_brown</item>
+        <item name="colorSurface">@color/surface_brown</item>
+    </style>
+
+    <!-- Purple Modern Theme -->
+    <style name="Theme.Muslim.Purple" parent="Theme.Muslim">
+        <item name="colorPrimary">@color/modern_purple</item>
+        <item name="colorPrimaryVariant">@color/modern_purple_dark</item>
+        <item name="colorSecondary">@color/pink_accent</item>
+        <item name="colorSecondaryVariant">@color/pink_accent_light</item>
+        <item name="android:colorBackground">@color/surface_purple</item>
+        <item name="colorSurface">@color/surface_purple</item>
+    </style>
+</resources>
